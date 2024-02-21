@@ -1,14 +1,9 @@
-/**
- * v0 por Vercel.
- * @see https://v0.dev/t/sjKIUhAPDwH
- * Documentación: https://v0.dev/docs#integrando-código-generado-en-tu-aplicación-nextjs
- */
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-export default function Componente() {
+export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -44,41 +39,40 @@ export default function Componente() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-6 sm:py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <Image
-                alt="Hero"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-                height="550"
-                src="/placeholder.svg"
-                width="550"
-              />
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Colección Verano
-                  </h1>
-                  <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                    Descubre las últimas tendencias y prendas de la temporada de
-                    Rufina. ¡Sé la primera en lucir lo más nuevo!
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link
-                    className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events_none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                    href="#"
-                  >
-                    Ver Colección
-                  </Link>
-                  <Link
-                    className="inline-flex h-10 items-center justify-center rounded-md border bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events_none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                    href="#"
-                  >
-                    Contactar Ventas
-                  </Link>
-                </div>
-              </div>
+        <section className="py-20 flex items-start">
+          <div className="text-center w-1/2 pr-8">
+            <h1 className="text-5xl font-bold mb-4">Colección Verano</h1>
+            <p className="text-xl mb-6">
+              Descubre las últimas tendencias y prendas de la temporada de
+              Rufina. ¡Sé la primera en lucir lo más nuevo!
+            </p>
+            <div className="flex justify-center space-x-4">
+              <Button className="bg-black text-white">Ver Colección</Button>
+              <Button className="bg-white text-black border border-black">
+                Contactar Ventas
+              </Button>
+            </div>
+          </div>
+          <div className="grid grid-cols-4 gap-4 w-1/2">
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold">Product 1</h3>
+              <p className="text-gray-500">Description of Product 1</p>
+              <Button className="mt-4 bg-black text-white">View Details</Button>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold">Product 2</h3>
+              <p className="text-gray-500">Description of Product 2</p>
+              <Button className="mt-4 bg-black text-white">View Details</Button>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold">Product 3</h3>
+              <p className="text-gray-500">Description of Product 3</p>
+              <Button className="mt-4 bg-black text-white">View Details</Button>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold">Product 4</h3>
+              <p className="text-gray-500">Description of Product 4</p>
+              <Button className="mt-4 bg-black text-white">View Details</Button>
             </div>
           </div>
         </section>
