@@ -10,7 +10,7 @@ export default function Home() {
         <Link className="flex items-center justify-center" href="#">
           <IconoMontaña />
           <span className="sr-only">Boutique Rufina</span>
-        </Link> 
+        </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
@@ -39,21 +39,21 @@ export default function Home() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="py-20 flex items-start">
-          <div className="text-center w-1/2 pr-8">
+        <section className="py-20 flex flex-col items-center md:flex-row md:items-start">
+          <div className="text-center md:w-1/2">
             <h1 className="text-5xl font-bold mb-4">Colección Verano</h1>
             <p className="text-xl mb-6">
-              Descubre las últimas tendencias y prendas de la temporada de
-              Rufina. ¡Sé la primera en lucir lo más nuevo!
             </p>
-            <div className="flex justify-center space-x-4">
-              <Button className="bg-black text-white">Ver Colección</Button>
+            <div className="flex flex-col md:flex-row justify-center md:space-x-4">
+              <Button className="bg-black text-white mb-4 md:mb-0">
+                Ver Colección
+              </Button>
               <Button className="bg-white text-black border border-black">
                 Contactar Ventas
               </Button>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-4 w-1/2">
+          <div className="grid-cols-2 md:grid-cols-4 gap-4 w-full md:w-1/2 flex">
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="text-xl font-bold">Product 1</h3>
               <p className="text-gray-500">Description of Product 1</p>
@@ -70,12 +70,13 @@ export default function Home() {
               <Button className="mt-4 bg-black text-white">View Details</Button>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold">Product 4</h3>
-              <p className="text-gray-500">Description of Product 4</p>
+              <h3 className="text-xl font-bold">Product 3</h3>
+              <p className="text-gray-500">Description of Product 3</p>
               <Button className="mt-4 bg-black text-white">View Details</Button>
             </div>
           </div>
         </section>
+
         <section className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
