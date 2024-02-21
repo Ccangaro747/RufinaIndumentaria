@@ -10,7 +10,7 @@ export default function Home() {
         <Link className="flex items-center justify-center" href="#">
           <IconoMontaña />
           <span className="sr-only">Boutique Rufina</span>
-        </Link>
+        </Link> 
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
@@ -73,47 +73,6 @@ export default function Home() {
               <h3 className="text-xl font-bold">Product 4</h3>
               <p className="text-gray-500">Description of Product 4</p>
               <Button className="mt-4 bg-black text-white">View Details</Button>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-            <Image
-              alt="Imagen"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-              height="310"
-              src="/placeholder.svg"
-              width="550"
-            />
-            <div className="flex flex-col justify-center space-y-4">
-              <ul className="grid gap-6">
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">Colaboración</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      Facilita la colaboración con herramientas integradas de
-                      revisión de código.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">Automatización</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      Automatiza tu flujo de trabajo con integración continua.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">Escalabilidad</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      Despliega en la nube con un solo clic y escala con
-                      facilidad.
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </section>
