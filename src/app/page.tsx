@@ -8,38 +8,38 @@ import { CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
-          <IconoMontaña />
-          <span className="sr-only">Boutique Rufina</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            Colecciones
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            Catálogo
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            Nosotros
-          </Link>
-          <Link
-            className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            Contacto
-          </Link>
-        </nav>
-      </header>
+<header className="px-4 lg:px-6 h-20 flex items-center">
+  <Link className="flex items-center justify-center" href="#">
+    <IconoMontaña />
+    <span className="sr-only">Boutique Rufina</span>
+  </Link>
+  <nav className="ml-auto flex gap-4 sm:gap-6">
+    <Link
+      className="text-sm font-medium hover:underline underline-offset-4"
+      href="#"
+    >
+      Colecciones
+    </Link>
+    <Link
+      className="text-sm font-medium hover:underline underline-offset-4"
+      href="#"
+    >
+      Catálogo
+    </Link>
+    <Link
+      className="text-sm font-medium hover:underline underline-offset-4"
+      href="#"
+    >
+      Nosotros
+    </Link>
+    <Link
+      className="text-sm font-medium hover:underline underline-offset-4"
+      href="#"
+    >
+      Contacto
+    </Link>
+  </nav>
+</header>
       <main className="flex-1">
         <section className="py-20 flex flex-col items-center md:flex-row md:items-start">
           <div className="text-center md:w-1/2">
@@ -57,25 +57,81 @@ export default function Home() {
           </div>
           <div className="grid-cols-2 md:grid-cols-4 gap-4 w-full md:w-1/2 flex">
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold">Product 1</h3>
-              <p className="text-gray-500">Description of Product 1</p>
-              <Button className="mt-4 bg-black text-white">View Details</Button>
+            <Card className="w-full">
+              <CardHeader>
+                <Image
+                  alt="Product image"
+                  className="w-full h-auto"
+                  height="200"
+                  src="/placeholder.svg"
+                  style={{
+                    aspectRatio: "200/200",
+                    objectFit: "cover",
+                  }}
+                  width="200"
+                />
+              </CardHeader>
+              <CardContent>
+                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
+                <p className="text-gray-500">Descripción breve del producto.</p>
+              </CardContent>
+              <CardFooter className="flex justify-between">
+                <span className="text-lg font-bold">$Precio</span>
+                <Button variant="secondary">Ver Detalles</Button>
+              </CardFooter>
+            </Card>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold">Product 2</h3>
-              <p className="text-gray-500">Description of Product 2</p>
-              <Button className="mt-4 bg-black text-white">View Details</Button>
+            <Card className="w-full">
+              <CardHeader>
+                <Image
+                  alt="Product image"
+                  className="w-full h-auto"
+                  height="200"
+                  src="/placeholder.svg"
+                  style={{
+                    aspectRatio: "200/200",
+                    objectFit: "cover",
+                  }}
+                  width="200"
+                />
+              </CardHeader>
+              <CardContent>
+                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
+                <p className="text-gray-500">Descripción breve del producto.</p>
+              </CardContent>
+              <CardFooter className="flex justify-between">
+                <span className="text-lg font-bold">$Precio</span>
+                <Button variant="secondary">Ver Detalles</Button>
+              </CardFooter>
+            </Card>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold">Product 3</h3>
-              <p className="text-gray-500">Description of Product 3</p>
-              <Button className="mt-4 bg-black text-white">View Details</Button>
+            <Card className="w-full">
+              <CardHeader>
+                <Image
+                  alt="Product image"
+                  className="w-full h-auto"
+                  height="200"
+                  src="/placeholder.svg"
+                  style={{
+                    aspectRatio: "200/200",
+                    objectFit: "cover",
+                  }}
+                  width="200"
+                />
+              </CardHeader>
+              <CardContent>
+                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
+                <p className="text-gray-500">Descripción breve del producto.</p>
+              </CardContent>
+              <CardFooter className="flex justify-between">
+                <span className="text-lg font-bold">$Precio</span>
+                <Button variant="secondary">Ver Detalles</Button>
+              </CardFooter>
+            </Card>
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold">Product 3</h3>
-              <p className="text-gray-500">Description of Product 3</p>
-              <Button className="mt-4 bg-black text-white">View Details</Button>
-            </div>
+           
           </div>
         </section>
 
@@ -201,190 +257,7 @@ export default function Home() {
                 <Button variant="secondary">Ver Detalles</Button>
               </CardFooter>
             </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
-            <Card className="w-full">
-              <CardHeader>
-                <Image
-                  alt="Product image"
-                  className="w-full h-auto"
-                  height="200"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "200/200",
-                    objectFit: "cover",
-                  }}
-                  width="200"
-                />
-              </CardHeader>
-              <CardContent>
-                <h3 className="text-lg font-semibold">Nombre del Producto</h3>
-                <p className="text-gray-500">Descripción breve del producto.</p>
-              </CardContent>
-              <CardFooter className="flex justify-between">
-                <span className="text-lg font-bold">$Precio</span>
-                <Button variant="secondary">Ver Detalles</Button>
-              </CardFooter>
-            </Card>
+
           </div>
         </div>
       </div>
